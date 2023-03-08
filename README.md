@@ -5,7 +5,7 @@ vidu REST API-ja.
 
 Upustva za kloniranje repozitorijuma i pokretanje: 
 
-1. Otvorite IntelliJ IDEA i izaberite „Checkout from Version Control“ na ekranu dobrodošlice, ili izaberite „File“ > „Nev“ > „Project from Version Control“ iz glavnog menija.
+1. Otvorite IntelliJ IDEA i izaberite „Checkout from Version Control“ na ekranu dobrodošlice, ili izaberite „File“ > „New“ > „Project from Version Control“ iz glavnog menija.
 2. U dijalogu „Checkout from Version Control“ izaberite „Git“ sa liste sistema za kontrolu verzija.
 3. U polje „URL Git repozitorija“ unesite URL GitHub(https://github.com/MarjanB00/User-Management-Application.git). URL spremišta možete pronaći na veb lokaciji GitHub, ispod dugmeta „Code“.
 4. Izaberite direktorijum u koji želite da klonirate spremište. Podrazumevano, IntelliJ IDEA će predložiti direktorijum sa istim imenom kao i spremište.
