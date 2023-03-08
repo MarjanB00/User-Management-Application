@@ -3,7 +3,7 @@
 User-Management-Application je jednostavan sistem za upravljanje korisnicima nekog proizvoljnog informacionog sistema. Sistem je realizovan kroz RESTFul arhitekturu i svi servisi su izloženi u
 vidu REST API-ja.
 
-Upustva za kloniranje repozitorijuma: 
+Upustva za kloniranje repozitorijuma i pokretanje: 
 
 1. Otvorite IntelliJ IDEA i izaberite „Checkout from Version Control“ na ekranu dobrodošlice, ili izaberite „File“ > „Nev“ > „Project from Version Control“ iz glavnog menija.
 2. U dijalogu „Checkout from Version Control“ izaberite „Git“ sa liste sistema za kontrolu verzija.
@@ -27,7 +27,7 @@ Prikazuje sve deaktivirane korisnike
 
 --------------------------------------------------------------------------
 (GET)http://localhost:8080/api/user/get/userbydate?date={2023-03-06}
-Prikaze sve korisnike kreirane datuma {2023.03.06}.
+Prikaze sve korisnike kreirane datuma {2023.03.06}(y.m.d).
 
 --------------------------------------------------------------------------
 (DELETE)http://localhost:8080/api/user/delete/{username1}
@@ -36,6 +36,7 @@ Brise korisnika sa korisnickim imenom {username1}. U koliko korisnik da tim kori
 --------------------------------------------------------------------------
 (POST)http://localhost:8080/api/user/register
 Body(JSON):
+```
 {   
     "username":"testusername7",
     "ime": "Test Authwqeqwe ",
@@ -46,17 +47,18 @@ Body(JSON):
     "gradRodjenja": "Kotor",
     "kompanija": "Heidenreich-Denesik"
 }
-
+```
 Registracija Korisnika
 
 --------------------------------------------------------------------------
 (PUT)http://localhost:8080/api/user/update?username={username1}
 Body(JSON):
+```
 {   
     "password": "teWdsth4a%shdsad",
     "pol":"m",
     "gradRodjenja": "Kotor",
     "kompanija": "Heidenreich-Denesik"
 }
-
+```
 Azuriranje korisnickih informacija. U URL usernam={username1} se navodi kojeg korisnika azuriramo a u Body saljemo koje informacije ažuriramo. Mozemo vise ili jednu u isto vrijeme
