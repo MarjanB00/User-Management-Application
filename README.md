@@ -61,4 +61,4 @@ Body(JSON):
     "kompanija": "Heidenreich-Denesik"
 }
 ```
-Azuriranje korisnickih informacija. U URL usernam={username1} se navodi kojeg korisnika azuriramo a u Body saljemo koje informacije ažuriramo. Mozemo vise ili jednu u isto vrijeme
+Azuriranje korisnickih informacija. U URL username={username1} se navodi kojeg korisnika azuriramo a u Body saljemo koje informacije ažuriramo. Mozemo vise ili jednu u isto vrijeme
